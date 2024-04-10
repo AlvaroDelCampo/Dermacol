@@ -1,0 +1,40 @@
+<!--lista-productos.component.html-->
+<input type="text" [(ngModel)]="filtroBusqueda" placeholder="Buscar por nombre o referencia" class="input-busqueda">
+
+<select [(ngModel)]="filtroFamilia" class="select-familia">
+  <option value="">Todas las familias</option>
+  <option *ngFor="let familia of familias" [value]="familia">{{ familia }}</option>
+</select>
+
+<ul class="producto-lista">
+  <li *ngFor="let producto of filtrarProductos() | paginate: { itemsPerPage: 10, currentPage: page }" class="producto-item">
+    <div class="producto-info">
+      <div>
+        <span class="nombre-etiqueta">Nombre: </span>
+        <span>{{ producto.nombre_producto }}</span>
+      </div>
+      <div>
+        <span class="nombre-etiqueta">Referencia: </span>
+        <span>{{ producto.reference }}</span>
+      </div>
+      <div>
+        <span class="nombre-etiqueta">Pvp: </span>
+        <span>{{ producto.pvp }}</span>
+      </div>
+      <div>
+        <span class="nombre-etiqueta">Ean 13: </span>
+        <span>{{ producto.ean13 }}</span>
+      </div>
+      <div>
+        <span class="nombre-etiqueta">Marca: </span>
+        <span>{{ producto.marca }}</span>
+      </div>
+      <div>
+        <img [src]="producto.url_imagen" alt="Imagen del producto" class="producto-imagen">
+      </div>
+    </div>
+  </li>
+</ul>
+
+<pagination-controls (pageChange)="page = $event" class="pagination-controls"></pagination-controls>
+

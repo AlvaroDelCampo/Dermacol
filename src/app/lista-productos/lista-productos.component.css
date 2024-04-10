@@ -1,0 +1,90 @@
+/*lista-productos.components.css*/
+/* Estilo para la lista de productos */
+.producto-lista {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+}
+
+/* Estilo para cada tarjeta de producto */
+.producto-item {
+  width: 300px; /* Ancho ajustado para que las tarjetas no sean tan anchas */
+  margin-bottom: 20px;
+  margin-right: -10px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para la información de cada producto */
+.producto-info {
+  margin-bottom: 10px; /* Espacio entre cada línea de información */
+}
+
+/* Estilo para los nombres de las etiquetas */
+.producto-info > div > span.nombre-etiqueta {
+  font-weight: bold; /* Texto de las etiquetas seleccionadas en negrita */
+}
+
+/* Estilo para el precio del producto */
+.producto-pvp {
+  font-size: 14px;
+  color: #555555;
+  margin-bottom: 10px;
+}
+
+/* Estilo para la imagen del producto */
+.producto-imagen {
+  width: 200px; /* Ancho reducido de la imagen */
+  height: auto; /* Altura automática para mantener la proporción */
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Estilo para el input de búsqueda */
+.input-busqueda {
+  width: 30%; /* Ancho ajustado para que el input no ocupe toda la pantalla */
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+/* Estilo para el select de filtrado por familia */
+.select-familia {
+  width: 30%; /* Ancho ajustado para que el select no ocupe toda la pantalla */
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+/* Estilo para la paginación */
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+
+/* Estilo para los nombres de las etiquetas */
+.producto-info > div > span.nombre-etiqueta {
+  font-weight: bold; /* Texto de las etiquetas seleccionadas en negrita */
+  color: rgb(2, 2, 2); /* Color del texto de las etiquetas */
+}
+
+
+
+
+
+
+
+
+
+

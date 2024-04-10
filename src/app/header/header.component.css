@@ -1,0 +1,50 @@
+/* Estilo para la barra de navegación */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFF;
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  transition: top 0.3s;
+}
+
+.navbar-logo img {
+  height: 90px; /* Ajusta este valor según el tamaño de tu logo */
+}
+
+.navbar-nav {
+  list-style-type: none;
+  display: flex;
+}
+
+.navbar-nav li {
+  padding: 0 15px;
+}
+
+.navbar-nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Estilo para la sección del héroe */
+.hero {
+  margin-top: -50px; /* Ajusta este valor según la altura de tu barra de navegación */
+  background-color: rgb(247, 242, 246); /* Usa el color de fondo apropiado */
+  text-align: center;
+  padding: 1px 0;
+}
+
+.hero img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Esconde la barra de navegación al hacer scroll hacia abajo */
+.hidden-nav {
+  top: -100px; /* Ajusta este valor al tamaño de tu navbar */
+}
